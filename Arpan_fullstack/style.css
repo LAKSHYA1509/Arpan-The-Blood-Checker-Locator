@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+   --red: #DC0000;
+   --dark-red: #850000;
+   --beige: #FFDB89;
+   --skin: #FFF6C3;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #850000;
+    border-radius: 20px;
+}
+nav{
+    height: 10vh;
+    width: 98%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.393);
+    backdrop-filter: blur(9px);
+    position: fixed;
+    top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0vh 0 2vw;
+    align-items: center;
+    margin: auto;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0 8px 30px 4px rgba(128, 128, 128, 0.124);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-size: 19px;
+}
+nav li{
+    padding: 10vh 3vw;
+    transition: all 0.2s ease-in-out;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: var(--dark-red);
+    border-radius: 15px;
+    padding: 1vw 1.5vw;
+    outline: none;
+    border: transparent;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+#button-login{
+    color: white;
+    font-size: 14px;
+    padding: 20vw 0;
+}
+
+#button-request{
+    color: white;
+    font-size: 14px;
+    padding: 20vw 0;
+}
+
+#button-trackme{
+    color: white;
+    font-size: 14px;
+    padding: 20vw 0;
+}
+
+
+button:hover{
+    background-color: #d80e0e;
+    cursor: pointer;
+    /* font-size: 14px; */
+    color:white;
+    /* transform: translateX(-6px); */
+}
+
+.links #register{
+    background-color: #850000;
+    color: white;
+    overflow: hidden;
+}
+
+
+#register:hover{
+    transform: translateX(2px);
+}
+nav li:hover{
+    background-color: #8500002f;
+    transform: translateY(-2px);
+    font-weight: 500;
+    /* color: white; */
+}
+nav h1{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+}
+.connections{
+    color: #ffffff;
+    gap: 28px;
+    display: flex;
+    
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    height: 100vh;
+    align-items: center;
+}
+.home-left{
+    width: 40% ;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.home-left h1{
+
+    font-size: 80px;
+    font-weight: 700;
+    color: black;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.style{
+    background: linear-gradient(#850000,red);
+    background-clip: text;-webkit-background-clip: text;color: transparent;
+}
+.home-left h4{
+    color: rgb(34, 34, 34);
+    font-weight: 300;
+    word-spacing: 3px;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+#margin{
+    margin-bottom: 80px;
+}
+.home-right{
+    width: 50%;
+    padding: 2vw;
+    height: 90vh;
+    background: url(volunteer-collecting-blood-donation-free-vector.jpg);
+    /* background-color: yellow; */
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.hospital-section{
+    height: 40vh;
+    width: 100%;
+}
+.hospital-left{
+    width: 20%;
+    /* background-color: #850000; */
+    background: url(images/how\ it\ works\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    color: white;
+}
+.hospital-section{
+    /* border-top: 2px dashed #850000; */
+    display: flex;
+    padding-top: 15vh;
+    /* background-color: yellow; */
+    margin-bottom: 30px;
+}
+.hospital-left h2{
+    font-size: 50px;
+    margin-bottom: 2px;
+}
+.hospital-left h3{
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(208, 208, 208);
+}
+.hospital-right{
+    background-color: rgb(244, 244, 244);
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.hospital-card-qrg{
+    background: url(images/logos/qrg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18%;
+    height: 35vh;
+}
+.hospital-card-metro{
+    background: url(images/logos/metro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18%;
+    height: 35vh;
+}
+.hospital-card-max{
+    background: url(images/logos/max.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18%;
+    height: 35vh;
+}
+.hospital-card-accord{
+    background: url(images/logos/accord.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18%;
+    height: 35vh;
+}
+.sectionspace{
+    width: 100%;
+    height: 11vh;
+}
+.why{
+    /* background-color: red; */
+    background: url(images/blood.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 40vh;
+}
+.why-left{
+    width: 70%;
+    height: 100vh;
+}
+.why-left h1{
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 55px;
+}
+.photo-gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+.img{
+    height: 25vh;
+    width: 40vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0 3vw;
+    box-shadow: 2px 5px 20px 3px rgba(128, 128, 128, 0.283);
+}
+.img-1{
+    background:url(images/pumping\ blood.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-2{
+    background:url(images/blood\ processing.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-3{
+    background:url(images/blood\ transfer.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.how{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+
+}
+.how-left{
+    height: 100vh;
+    width: 25%;
+    background: url(images/how\ it\ works\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* -webkit-filter: blur(1px); */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 2vw;
+}
+.how-left h1{
+    font-size: 80px;
+    /* text-align: center; */
+
+}
+.how-right{
+    padding-top: 15vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    /* color: gre; */
+}
+.cards{
+    display: flex;
+  justify-content: space-between; /* Adjust this property for spacing */
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 30%;
+    border: 2px solid #850000;
+    border-radius: 20px;
+    padding: 2vw;
+    text-align: center;
+}
+.card h3{
+    margin-bottom: 10px;
+}
+.img-hospital{
+    height: 50vh;
+    width: 100%;
+    background: url(images/hospital.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-donor{
+    height: 50vh;
+    width: 90%;
+    background: url(images/blood\ donor.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-NGO{
+    height: 50vh;
+    width: 100%;
+    background: url(images/NGO.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hosp {
+    margin-top: 10px;
+      height: 40px;
+    }
+
+.btn-ngo {
+    margin-top: 10px;
+    height: 40px;
+}
+
+.btn-donor {
+    margin-top: 10px;
+    height: 40px;
+}
+.video-section{
+    height: 110vh;
+    width: 100%;
+    background: url(images/blood-5427229_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 81vh;
+    position: initial;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+  }
+  .transformed{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+.active{
+    transform: translateY(-50px);
+    opacity: 1;
+    z-index: -8;
+}
+.transformed-text{
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.activetext{
+    transform: translateX(20px);
+    opacity: 1;
+    z-index: -1;
+}
+.transformed-text-left{
+    transform: translateX(20px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.activetextleft{
+    transform: translateX(-10px);
+    opacity: 1;
+}
+#register2{
+    background-color: transparent;
+    color: red;
+    font-size: 18px;
+    padding-right: 20vh;
+}
+.our-team{
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: green; */
+
+}
+.img-card{
+    height: 300px;
+    width: 300px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.team-members{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 93px;
+}
+.imge{
+    height: 200px ;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #850000;
+}
+.text{
+    margin-top: 20px;
+    text-align: center;
+}
+.designation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+}
+#hr{
+    height: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    /* background-color: red;s */
+}
+/* .up{
+    transform: translateY(-90px);
+} */
+
+
+.somay{
+    background: url(images/somay.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lakshya{
+    background: url(images/lakshya\ linkeidn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.keshav{
+    background: url(images/keshav.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.adamya{
+    background: url(images/WhatsApp\ Image\ 2023-11-03\ at\ 19.22.44_7b648e37.jpg);
+    background-position-y: -20px;
+    background-position-x: -40px;
+
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.our-team{
+    /* content: '';
+    height: 100vh;
+    width: 100%; */
+    background: url(images/wave-haikei.svg);
+    /* background-color: red; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* top: 0;
+    left: 0; */
+}
+.our-team::before{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background: url(images/wave-haikei.svg);
+    /* background-color: red; */
+    z-index: -3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+     top: 0;
+    left: 0;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: var(--dark-red);
+    text-underline-offset: 10px;
+}
+/* footer{
+    height: 40vh;
+    background-color: #850000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.footer-logo{
+    width: 30%;
+    height: 80%;
+    /* background: url(images/logos/logo.png); */
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.links-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 60%;
+    height: 100%;
+    padding-right: 2vw;
+}
+.links-top{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    /* background-color: yellow; */
+    /* font-weight: 200;
+
+}
+.links-bottom{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    border-top: 1px solid white;
+}
+.insta{
+    height: 30px;
+    width: 30px;
+    background: url(images/logos/insta.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.face{
+    height: 30px;
+    width: 30px;
+    background: url(images/logos/facebook.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logoo{
+    margin-left: 1vw;
+}  */
+
+.footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.185);
+    background-color:#850000;
+}
+.main-footer{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* background-color: #2a2a2a; */
+}
+.footer-left{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.footer-head{
+    font-size: 2rem;
+    color: white;
+}
+.footer-info{
+    font-size: 1.2rem;
+    color: var(--subhead-color);
+    font-family: 'League Spartan';
+    margin-top: 1rem;
+    color: #ffffff;
+}
+.social-link-wrapper{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+}
+.link-card{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.link-card:hover .instagram{
+    scale: 1.1;
+}
+.instagram{
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    transition: all 0.23s ease-in-out;
+}
+.insta{
+    background-image: url(assets/icons/insta.svg);
+}
+.twitter{
+    background-image: url(assets/icons/twitter.svg);
+}
+.pint{
+    background-image: url(assets/icons/pint.svg);
+}
+.footer-right{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.footer-card{
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 2rem;
+    color: #ffffff;
+    /* background-color: yellow; */
+}
+.footer-card-head{
+    font-family: 'DM Sans';
+    font-size: 1.3rem;
+    color: var(--text-black);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+.footer-card-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.footer-links{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    color: var(--subhead-color);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.23s ease-in-out;
+    margin-bottom: .7rem;
+}
+.footer-links:hover{
+    color: #6b95d3;
+}
+.after-footer{
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.185);
+    font-family: 'DM Sans';
+    font-weight: 400;
+    color: var(--subhead-color);
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@turf/turf": "^6.5.0"
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.7"
+  }
+}
